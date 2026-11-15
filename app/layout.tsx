@@ -10,6 +10,13 @@ export const metadata: Metadata = { title: { default: "Sumi — read manga", tem
 export default function Root({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${serif.variable} ${sans.variable}`}>
+      <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9380431268086646"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body className="min-h-screen">
         <header className="sticky top-0 z-30 border-b border-[var(--line)] bg-[var(--bg)]/95">
           <nav className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-5 gap-y-2 px-4 py-3">
