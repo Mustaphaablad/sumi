@@ -1,0 +1,10 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+:root { --bg:#F4F0E8; --fg:#111111; --line:#D6CCBA; }
+html.dark { --bg:#111111; --fg:#F4F0E8; --line:#2c2c2c; }
+body { background:var(--bg); color:var(--fg); font-family:var(--f-sans);
+  background-image: radial-gradient(rgba(17,17,17,.04) 1px, transparent 1px); background-size:3px 3px; }
+html.dark body { background-image:none; }
+.brush { height:6px; background:#D94735; clip-path:polygon(0 40%,8% 0,30% 55%,55% 10%,80% 60%,100% 20%,100% 100%,0 100%); }
+:focus-visible { outline:2px solid #D94735; outline-offset:2px; }
+.hide-sb::-webkit-scrollbar{display:none} .hide-sb{scrollbar-width:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
